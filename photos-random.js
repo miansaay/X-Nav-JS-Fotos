@@ -1,3 +1,4 @@
+//Miguel Ángel Sainz Ayuso
 
 function images(id){
 
@@ -13,6 +14,22 @@ function images(id){
     var img = lista_imagenes[Math.floor(Math.random() * lista_imagenes.length)];
     document.getElementById(id).innerHTML = "<img src=" + img + ">";
 }
+
+actual = "image7";
+function images2(id2){
+    var i = Math.floor(Math.random() * 9);
+    if (i !== 0) {
+        var anterior = document.getElementById(actual);
+        anterior.style.display ='none';
+        var id = "image" + i;
+        actual = id;
+        var imagen =  document.getElementById(id);
+        imagen.style.display ='inline';
+        document.getElementById(id2).innerHTML = imagen.innerHTML;     
+    }
+}
+
+
 
 
                       
